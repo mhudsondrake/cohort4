@@ -1,12 +1,11 @@
 const functions = {
-  // define attributes / variables
-    // number
-    // string
-    // boolean
-    // array
-    // dictionary / objects
-    // undefined
-
+  //1. define attributes / variables
+      // number
+      // string
+      // boolean
+      // array
+      // dictionary / objects
+      // undefined
 
   // number
 
@@ -44,20 +43,20 @@ const functions = {
     return input == 0;
   },
 
-  // sample if / else
+  //2. sample if / else
 
   //NEED TO DO THIS!!!
 
-  // functions
-    // parameters
-    // returns
+  //3. functions
+      // parameters
+      // returns
 
   //NEED TO DO THIS
 
-  // arrays
-    // add to the front
-    // add to the end
-    // update values
+  //4. arrays
+      // add to the front
+      // add to the end
+      // update values
 
   // add to the front
 
@@ -75,38 +74,34 @@ const functions = {
 
   // update values
 
-  //loops
+  //5. loops
+      // for/in
+      // while
+      // do while
+      // forEach (with array and function)
 
-    // for/in
-    // while
-    // do while
-    // forEach (with array and function)
-  
-  // Objects / Dictionaries
-    // declare object
-    // lookup key to retrieve the value
+  //6. Objects / Dictionaries
+      // declare object
+      // lookup key to retrieve the value
 
+  // declare object
 
-    // declare object
-
-  userDictionary: (prov) => {
+  userDictionary: prov => {
     console.log("we're in the function", prov);
     const provinces = {
-      "sk": "saskatchewan",
-      "ab": "alberta",
+      sk: "saskatchewan",
+      ab: "alberta"
     };
     console.log(provinces["sk"]);
-    
+
     return "xyz";
 
     // name: "Harriet";
-  //   age: "35";
-  //   hobby: "purusing freedom";
-  //   isMarried: true;
-  //   abilities: ["strong", "fearless", "methodical", "determined"];
-  },
-
-  
+    //   age: "90";
+    //   hobby: "purusing freedom";
+    //   isMarried: false;
+    //   abilities: ["strategic", "fearless", "methodical", "determined"];
+  }
 };
 
 export default functions;

@@ -54,37 +54,64 @@ test("traits of person", () => {
 test("property is undefined", () => {
   expect(functions.undefinedProperty(0)).toBe(true);
   expect(functions.undefinedProperty(9)).toBe(false);
-
 });
 
 // add to the front
 
 test("front of the list", () => {
-    expect(functions.addFront(["a", "b", "c", "d"],"e")).toEqual(["e","a", "b", "c", "d"]);
-    expect(functions.addFront(["a", "b", "c", "d"],"f")).toEqual(["f","a", "b", "c", "d"]);
-  });
+  expect(functions.addFront(["a", "b", "c", "d"], "e")).toEqual([
+    "e",
+    "a",
+    "b",
+    "c",
+    "d"
+  ]);
+  expect(functions.addFront(["a", "b", "c", "d"], "f")).toEqual([
+    "f",
+    "a",
+    "b",
+    "c",
+    "d"
+  ]);
+});
 
-// add to the end  
+// add to the end
 
-  test("back of the list", () => {
-    expect(functions.addEnd(["a", "b", "c", "d"],"e")).toEqual(["a", "b", "c", "d","e"]);
-    expect(functions.addEnd(["a", "b", "c", "d"],"f")).toEqual(["a", "b", "c", "d","f"]);
-  });
+test("back of the list", () => {
+  expect(functions.addEnd(["a", "b", "c", "d"], "e")).toEqual([
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+  ]);
+  expect(functions.addEnd(["a", "b", "c", "d"], "f")).toEqual([
+    "a",
+    "b",
+    "c",
+    "d",
+    "f"
+  ]);
+});
 
-// update values  
+// update values
 
-  test("update values", () => {
-    expect(functions.addEnd(["a", "b", "c", "d"],"e")).toEqual(["a", "b", "c", "d","e"]);
-    
-  });
+test("update values", () => {
+  expect(functions.addEnd(["a", "b", "c", "d"], "e")).toEqual([
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+  ]);
+});
 
-  // declare object
+// declare object
 
-  test("user dictionary", () => {
-    // expect(functions.userDictionary([0]).toEqual([arr.values]);
-    console.log("userDictionary");
-    const val1 = functions.userDictionary("sk");
-    console.log(val1);
-    functions.userDictionary("ab");
-  });
-
+test("user dictionary", () => {
+  // expect(functions.userDictionary([0]).toEqual([arr.values]);
+  console.log("userDictionary");
+  const val1 = functions.userDictionary("sk");
+  console.log(val1);
+  functions.userDictionary("ab");
+});
