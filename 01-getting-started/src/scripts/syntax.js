@@ -1,10 +1,16 @@
 const functions = {
   // define attributes / variables
+    // number
+    // string
+    // boolean
+    // array
+    // dictionary / objects
+    // undefined
+
 
   // number
 
   addFive: num1 => {
-    // return 6;
     return num1 + 5;
   },
 
@@ -39,11 +45,20 @@ const functions = {
   },
 
   // sample if / else
+
+  //NEED TO DO THIS!!!
+
   // functions
-  // parameters
-  // returns
+    // parameters
+    // returns
+
+  //NEED TO DO THIS
 
   // arrays
+    // add to the front
+    // add to the end
+    // update values
+
   // add to the front
 
   addFront: (list, str) => {
@@ -60,13 +75,19 @@ const functions = {
 
   // update values
 
-  // for/in
-  // while
-  // do while
-  // forEach (with array and function)
+  //loops
+
+    // for/in
+    // while
+    // do while
+    // forEach (with array and function)
   
   // Objects / Dictionaries
+    // declare object
+    // lookup key to retrieve the value
 
+
+    // declare object
 
   userDictionary: (prov) => {
     console.log("we're in the function", prov);
@@ -77,7 +98,7 @@ const functions = {
     console.log(provinces["sk"]);
     
     return "xyz";
-    
+
     // name: "Harriet";
   //   age: "35";
   //   hobby: "purusing freedom";
@@ -85,8 +106,7 @@ const functions = {
   //   abilities: ["strong", "fearless", "methodical", "determined"];
   },
 
-  // declare object
-  // lookup key to retrieve value
+  
 };
 
 export default functions;
