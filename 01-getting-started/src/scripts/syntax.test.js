@@ -73,3 +73,4 @@ test("front of the list", () => {
     console.log(val1);
     functions.userDictionary("ab");
   });
+  

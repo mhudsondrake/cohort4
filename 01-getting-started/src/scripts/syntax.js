@@ -77,6 +77,7 @@ const functions = {
     console.log(provinces["sk"]);
     
     return "xyz";
+    
     // name: "Harriet";
   //   age: "35";
   //   hobby: "purusing freedom";
