@@ -19,27 +19,27 @@ test('Does the even function work?', () => {
 
 });
 
-test('Does the even function work?', () => {
-    expect(functions.isEven(2)).toBe(false);
+// test('Does the even function work?', () => {
+//     expect(functions.isEven(2)).toBe(true);
 
-});
+// });
 
-test('Does the even function work?', () => {
-    expect(functions.isFalse(2)).toBe(true);
+// test('Does the even function work?', () => {
+//     expect(functions.isFalse(2)).toBe(true);
 
-});
+// });
 
-test('Does the even function work?', () => {
-    expect(functions.isEven(2)).toBe(true);
+// test('Does the even function work?', () => {
+//     expect(functions.isEven(2)).toBe(true);
 
-});
+// });
 
-test('Does the even function work?', () => {
-    expect(functions.isEven(2)).toBe(false);
+// test('Does the even function work?', () => {
+//     expect(functions.isEven(2)).toBe(false);
 
-});
+// });
 
-test('Does the even function work?', () => {
-    expect(functions.isEven(2)).toBe(false);
+// test('Does the even function work?', () => {
+//     expect(functions.isEven(2)).toBe(true);
 
-});
+// });
