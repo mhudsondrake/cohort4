@@ -1,11 +1,38 @@
 const functions = {
-  //1. define attributes / variables
-      // number
-      // string
-      // boolean
-      // array
-      // dictionary / objects
-      // undefined
+  
+//1. define attributes / variables
+    // number
+    // string
+    // boolean
+    // array
+    // dictionary / objects
+    // undefined
+
+//2. sample if / else
+
+//3. functions
+    // parameters
+    // returns
+
+//4. arrays
+    // add to the front
+    // add to the end
+    // update values
+
+//5. loops 
+    // for
+    // for/in
+    // while
+    // do while
+    // forEach (with array and function)
+
+//6. Objects / Dictionaries
+    // declare object
+    // lookup key to retrieve the value
+
+
+  
+//1. define attributes / variables
 
   // number
 
@@ -43,20 +70,33 @@ const functions = {
     return input == 0;
   },
 
-  //2. sample if / else
+//2. sample if / else
 
-  //NEED TO DO THIS!!!
+  drinkingAge: () => {
+    if (Number < 18) {
+      return "you are under the legal drinking age";
+    } else {
+      (Number >= 18)
+      return "enjoy your drink";
+    }
+  },
 
-  //3. functions
-      // parameters
-      // returns
 
-  //NEED TO DO THIS
+//3. functions
 
-  //4. arrays
-      // add to the front
-      // add to the end
-      // update values
+  // parameters
+
+  myFunction: (x,y) => {
+    return x + y;
+ }
+
+  // returns
+
+  add(100,200);
+
+
+
+//4. arrays
 
   // add to the front
 
@@ -72,36 +112,79 @@ const functions = {
     return list;
   },
 
-  // update values
+  // update values WTF?
 
-  //5. loops
-      // for/in
-      // while
-      // do while
-      // forEach (with array and function)
+  
+//5. loops
+
+  // for/in
+
+  // SYNTAX... for (statement 1; statement 2; statement 3) {
+  //   // code block to be executed
+  // }
+
+  simpleLoop: () => {
+
+    for (let i = 0; i < 10; i++) {
+      console.log(i);
+
+    }
+  },
+  
+  // while
+
+  //SYNTAX... while (condition) {
+  //   // code block to be executed
+  // }
+
+ageWhile: () => {
+
+while (age < 10) {
+    
+  console.log ("Your age is less than 10");
+  age ++
+
+  } 
+},
+
+  // do while
+  //SYNTAX... do {
+  //   // code block to be executed
+  // }
+  // while (condition);
+
+doWhile: () => {
+
+  do {
+    return "Hello little one"
+  }
+  while (age < 10);
+
+},
+
+  // forEach (with array and function)
+
+  //SYNTAX... array.forEach(function(currentValue, index, arr), thisValue)
+
 
   //6. Objects / Dictionaries
-      // declare object
-      // lookup key to retrieve the value
 
   // declare object
 
-  userDictionary: prov => {
-    console.log("we're in the function", prov);
-    const provinces = {
-      sk: "saskatchewan",
-      ab: "alberta"
-    };
-    console.log(provinces["sk"]);
+  personTraits: () => {
 
-    return "xyz";
+    name: "Harriet";
+    age: "90";
+    hobby: "purusing freedom";
+    isMarried: false;
+    abilities: ["strategic", "fearless", "methodical", "determined"];
+  },
 
-    // name: "Harriet";
-    //   age: "90";
-    //   hobby: "purusing freedom";
-    //   isMarried: false;
-    //   abilities: ["strategic", "fearless", "methodical", "determined"];
-  }
+    // lookup key to retrieve the value
+
+
+
 };
+
 
 export default functions;

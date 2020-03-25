@@ -5,7 +5,6 @@ import functions from "./syntax.js";
 test("add five to number", () => {
   expect(functions.addFive(1)).toBe(6);
   expect(functions.addFive(4)).toBe(9);
-  //   console.log("Hello world!");
 });
 
 //string
@@ -55,6 +54,19 @@ test("property is undefined", () => {
   expect(functions.undefinedProperty(0)).toBe(true);
   expect(functions.undefinedProperty(9)).toBe(false);
 });
+
+//sample if / else
+
+test("drinking age", () => {
+  expect(functions.drinkingAge(19)).toEqual("enjoy your drink");
+});
+
+// parameters
+
+// test("parameters", () => {
+//   expect(functions.myFunction(0)).toBe(true);
+//   expect(functions.myFunction(9)).toBe(false);
+// });
 
 // add to the front
 
