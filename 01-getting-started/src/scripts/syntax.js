@@ -88,12 +88,9 @@ const functions = {
 
   myFunction: (x,y) => {
     return x + y;
- }
+ },
 
   // returns
-
-  add(100,200);
-
 
 
 //4. arrays
@@ -119,10 +116,6 @@ const functions = {
 
   // for/in
 
-  // SYNTAX... for (statement 1; statement 2; statement 3) {
-  //   // code block to be executed
-  // }
-
   simpleLoop: () => {
 
     for (let i = 0; i < 10; i++) {
@@ -132,10 +125,6 @@ const functions = {
   },
   
   // while
-
-  //SYNTAX... while (condition) {
-  //   // code block to be executed
-  // }
 
 ageWhile: () => {
 
@@ -148,10 +137,6 @@ while (age < 10) {
 },
 
   // do while
-  //SYNTAX... do {
-  //   // code block to be executed
-  // }
-  // while (condition);
 
 doWhile: () => {
 
@@ -164,7 +149,12 @@ doWhile: () => {
 
   // forEach (with array and function)
 
-  //SYNTAX... array.forEach(function(currentValue, index, arr), thisValue)
+  forEach: () => {
+  function myFunction(item, index, arr) {
+    arr[index] = item * 10;
+  }
+  
+},
 
 
   //6. Objects / Dictionaries
@@ -180,7 +170,7 @@ doWhile: () => {
     abilities: ["strategic", "fearless", "methodical", "determined"];
   },
 
-    // lookup key to retrieve the value
+  // lookup key to retrieve the value
 
 
 
