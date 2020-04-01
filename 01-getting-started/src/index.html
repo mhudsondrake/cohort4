@@ -19,6 +19,7 @@
     <title>FSD</title>
     <link href="style.css" rel="stylesheet">
     <script src="index.js" defer></script>
+    <script src="tax.js" defer></script>
 </head>
 
 <body>
@@ -116,6 +117,18 @@
         <button data-number>0</button>
         <button data-equals class="span-two">=</button>
     </div> 
+
+    <div class="wrapper">
+        <main>
+          <h1>Canadian Income Tax Calculator</h1><br>
+      
+          <label for="income">Enter Taxable Income: </label><input type="text" id="income">
+          <input type="button" id="calculate" value="Calculate"><br><br>            
+      
+          <label id="owed" for="taxesOwed">Taxes Owed: </label><input type="text" id="taxesOwed" disabled>
+      
+        </main>
+      </div>
 
 
 
