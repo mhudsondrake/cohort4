@@ -1,5 +1,6 @@
 body{
     background: #eee;
+  
 }
 #dom {
     margin: 0 auto;
@@ -21,9 +22,37 @@ li {
       display: inline-block;
       margin: 15px
       margin: 0 auto; */
-}
+/* } */
+
 button {
   display: block;
   margin: 0 auto;
   width: 30%;
 }
+
+#mstrCrd {
+  border: solid 5px grey;
+
+}
+
+.clCards {
+
+  display: flex;
+  flex-direction: column;
+  border: solid 2px lightgrey;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  max-width: 320px;
+  position: relative;
+  vertical-align: bottom;
+  width: 100%;
+  /* padding: 15px 32px; */
+}
+
+.rightSide {
+  text-align: right;
+  border: 2px lightgrey;
+  vertical-align: top;
+
+}
+
