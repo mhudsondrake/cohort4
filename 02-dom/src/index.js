@@ -1,80 +1,108 @@
-import functions from './domCards.js'
+import functions from "./domCards.js";
 
-// What do I need to do?
+// Basic DOM - Adding List Items
 
-// Using css create a page that looks like the page shown. It can look better but no worse
-// use “border: solid;” on the <div> so you can see where the <div> is
-// add a click event to the <div> using a “addEventListener” in the JavaScript
-// show on the console the parameter passed to the event listener
-// notice that depending on where you click on the <div> you get different targets
-// add an event on the show button that displays all the “Children” of the <ol> tag
-// add an event on the add button that will add a <li> tag to the end of the list
-// play lots; try adding to the start; try a delete
-
-//Event Listeners - Presentation Logic
-
-// Basic DOM - Adding List Items 
-
-display.addEventListener("click", () =>{
-  document.querySelectorAll('ol li').forEach(value => {
+display.addEventListener("click", () => {
+  document.querySelectorAll("ol li").forEach((value) => {
     console.log(value.textContent);
-  })
-})
+  });
+});
 
-add.addEventListener("click", () =>{
+add.addEventListener("click", () => {
   let addbt = document.getElementById("showChild");
   let li = document.createElement("li");
   li.textContent = "Hellloooo";
   addbt.appendChild(li);
+});
 
-})
-
-remove.addEventListener("click", () =>{
+remove.addEventListener("click", () => {
   let addbt = document.getElementById("showChild");
   let liChild = addbt.getElementsByTagName("li");
-  addbt.removeChild(liChild[liChild.length-1]);
- 
-})
+  addbt.removeChild(liChild[liChild.length - 1]);
+});
 
-// New Cards
+cardArea.addEventListener("click", onClick);
 
-// idMstrCard.addEventListener("click", e => {
+function onClick(e) {
+  const el = e.target
+  const todo = el.getAttribute("todo");
+  // console.log(todo);
+  
+  if (todo === "addBefore") {
+    functions.addCardBefore(el);
+  }
+  if (todo === "addAfter") {
+    functions.addCardAfter(el);
+  }
+  if (todo === "delete") {
+    functions.deleteCard(el);
+  }
+}
+
+document.getElementById("initialButton").addEventListener("click", placeCard);
+
+function placeCard() {
+  let div = functions.buildNewCard();
+  cardArea.appendChild(div);
+}
+
+// deleteCard.addEventListener("click", (e) =>{
+//   const del = e.target.parentElement;
+//   functions.deleteCard(del,"New Card");
 
 // })
 
-addBefore.addEventListener("click", (e) =>{
-  const addBef = e.target.parentElement;
-  functions.addCardBefore(addBef,"New Card");
-  
-   
-  // console.log(functions);
-  // let addbf = document.getElementById("idMstrCrd");
-  // let liBefore = document.createElement("div");
-  // // liBefore.textContent = "Hellloooo";
-  // addbf.appendChild(li);
+// addAfter.addEventListener("click", (e) =>{
+//   const addAf = e.target.parentElement;
+//   functions.addCardAfter(addAf,"New Card");
 
-})
+// })
 
-addAfter.addEventListener("click", (e) =>{
-  const addAf = e.target.parentElement;
-  functions.addCardAfter(addAf,"New Card");
-  // let addbf = document.getElementById("idMstrCrd");
-  // let liBefore = document.createElement("div");
-  // // liAfter.textContent = "Hellloooo";
-  // addaf.appendChild(li);
+// let counter = 3;
+// let counting=0;
 
-})
+// idMstrCard.addEventListener("click", e => {
+//       if (e.target.textContent === "Add Before"){
+//         let div = document.createElement("div");
+//         // functions.buildNewCard(div);
+//         div.appendChild(div);
+//       } else if (e.target.textContent === "Add After"){
+//         functions.buildNewCard(div);
+//         cardSec.insertBefore(div, event.target.parentNode.nextElementSibling);
+//       } else if (e.target.textContent === "Delete"){
+//         functions.deleteCard(e.target.parentElement);
 
-deleteCard.addEventListener("click", (e) =>{
-  const del = e.target.parentElement;
-  functions.deleteCard(del,"New Card");
-  
-  // let del = document.getElementById("idMstrCrd");
-  // let liDel = document.createElement("div");
-  // // liAfter.textContent = "Hellloooo";
-  // del.removeChild(div);
-})
+//       };
+// })
 
+// let cardSec = document.getElementById("idMstrCard");
+
+// idMstrCard.addEventListener("click", (e) => {
+//   if (e.target.textContent === "Add Before") {
+//     functions.addCardBefore(e.target.parentElement);
+//   } else if (e.target.textContent === "Add After") {
+//     functions.addCardAfter(e.target.parentElement);
+//   } else if (e.target.textContent === "Delete") {
+//     functions.deleteCard(e.target.parentElement);
+//   }
+// })
+
+// Scrap Work
+// console.log(functions);
+// let addbf = document.getElementById("idMstrCrd");
+// let liBefore = document.createElement("div");
+// // liBefore.textContent = "Hellloooo";
+// addbf.appendChild(li);
+
+// let addbf = document.getElementById("idMstrCrd");
+// let liBefore = document.createElement("div");
+// // liAfter.textContent = "Hellloooo";
+// addaf.appendChild(li);
+
+// let del = document.getElementById("idMstrCrd");
+// let liDel = document.createElement("div");
+// // liAfter.textContent = "Hellloooo";
+// del.removeChild(div);
 
 // document.addEventListener("click", myfunction);  // add a click event to the <div> using a “addEventListener” in the JavaScript
 
@@ -86,8 +114,6 @@ deleteCard.addEventListener("click", (e) =>{
 //     console.log(value);
 //   }
 // }
-
-
 
 // add an event on the show button that displays all the “Children” of the <ol> tag
 
@@ -107,5 +133,3 @@ deleteCard.addEventListener("click", (e) =>{
 //     ul.appendChild(li);
 //     input.value = "";
 //   }
-  
-

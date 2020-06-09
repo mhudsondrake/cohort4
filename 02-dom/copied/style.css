@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+h1 {
+    text-align: center;
+}
+
+p, span {
+    text-align: center;
+}
+
+.mainBox {
+    vertical-align: middle;
+    margin: auto;
+    width: 50%;
+    font-size: 1rem;
+    height: 100%;
+    border: solid;
+    background-color: #c7dfcf;
+    color: rgb(41, 39, 39);
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 30px;
+}
+
+.listBox {
+    vertical-align: middle;
+    margin: auto;
+    width: 40%;
+    font-size: 1rem;
+    height: 100%;
+    border: solid;
+    background-color: #e7f0ea;
+    color: rgb(41, 39, 39);
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 30px;
+}
+
+.button {
+    text-align: center;
+}
+
+.rightPanel {
+    display: table-cell;
+    vertical-align: middle;
+    margin: auto;
+    width: 50%;
+    font-size: 1rem;
+    height: 100%;
+    border: solid;
+    background-color: #c7dfcf;
+    color: rgb(41, 39, 39);
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 30px;
+    box-sizing: border-box;
+}
+
+.leftPanel {
+    display: table-cell;
+    vertical-align: middle;
+    margin: auto;
+    width: 50%;
+    font-size: 1rem;
+    height: 100%;
+    border: solid;
+    background-color: #c7dfcf;
+    color: rgb(41, 39, 39);
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 30px;
+    overflow: scroll;
+    box-sizing: border-box;
+}
+
+.cardPanels {
+    display: table;
+    width: 100%;
+}
+
+.myCardClass {
+    vertical-align: middle;
+    margin: auto;
+    width: 40%;
+    font-size: 1rem;
+    height: 100%;
+    border: solid;
+    background-color: #e7f0ea;
+    color: rgb(41, 39, 39);
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 30px;
+}

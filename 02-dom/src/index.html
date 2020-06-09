@@ -1,76 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="./index.css">
-    
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+
     <title>Basic DOM Manipulation</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="dom">
-        <h1>Basic DOM</h1>
-        <p>Melanie's List of Stuff</p>
-        <ol id="showChild">
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ol>
+      <h1>Basic DOM</h1>
+      <p>Melanie's List of Stuff</p>
+      <ol id="showChild">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
 
-        <div id="buttons">
+      <div id="buttons">
         <button id="display">Display</button>
         <button id="add">Add</button>
         <button id="remove">Remove</button>
-        </div>
-
+      </div>
     </div>
-<br>
-<br>
+    <br />
+    <br />
 
-<h1>Working With Cards</h1>
-<br>
-<br>
-    <!-- <div id="idMstrCrd" class="classCard"> -->
-        <div id="initialCrd" class="clCards" card="MelaniesCard1">
-            <h3>Initial Card</h3>
-            <button id="addBefore" class="button">Add Before</button>
-            <button id="addAfter" class="button">Add After</button>
-            <button id="deleteCard" class="button">Delete</button>
-        </div>
+    <h1>Working With Cards</h1>
+    <br />
+    <br />
 
-        <!-- <div class="clCards" card="MelaniesCard2">
-            <h3>Card 2</h3>
-            <button>Add Before</button>
-            <button>Add After</button>
-            <button>Delete</button>
-        </div>
-
-        <div class="clCards" card="MelaniesCard2">
-            <h3>Card 3</h3>
-            <button>Add Before</button>
-            <button>Add After</button>
-            <button>Delete</button>
-        </div>
-
-        <div class="clCards" card="MelaniesCard2">
-            <h3>Card 4</h3>
-            <button>Add Before</button>
-            <button>Add After</button>
-            <button>Delete</button>
-        </div> -->
-
+    <button id="initialButton">Add Card</button>
+    <br>
+    <div class="clGroupArea">
     
-    <!-- </div> -->
+      <div id="cardArea" class="clCardArea">
+        <div id="idMstrCard" class="clCards" card="MelaniesCard1">
+          <h3>Initial Card</h3>
+          <button todo="addBefore">Add Before</button>
+          <button todo="addAfter">Add After</button>
+          <button todo="delete">Delete</button>
+        </div>
+      </div>
 
-    
-    <div class= "rightSide">
-            <h2>Right Side</h2>
+      <div class="rightSide">
+        <h2>Right Side</h2>
+      </div>
     </div>
 
-    
     <script src="index.js" language="javascript" type="module"></script>
 
     <!-- <script src="index.js"></script> -->
-</body>
+  </body>
 </html>

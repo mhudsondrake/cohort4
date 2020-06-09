@@ -1,67 +1,60 @@
-// create card1 in DOM
+let card = 0;
+
 const functions = {
+  buildNewCard: () => {
+    // Create New Div
 
-buildNewCard: (text) => {
-    // console.log("Hi from the console");
-    
-// let card1 = document.getElementById("idMstrCrd"); //move to index.js? 
-// let cardnum = 1;
+    const divNewCard = document.createElement("div");
+    card++;
+    const msg = "Hello " + card;
+    const txtNode = document.createTextNode(msg);
+    divNewCard.appendChild(txtNode);
 
+    // Generate Buttons on Card
 
-// Create New Div
+    const addBeforeBtn = document.createElement("button");
+    addBeforeBtn.appendChild(document.createTextNode("Add Before"));
+    addBeforeBtn.setAttribute("todo", "addBefore");
+    divNewCard.appendChild(addBeforeBtn);
 
-const divNewCard = document.createElement('div');
-divNewCard.appendChild(document.createTextNode(text));
+    const addAfterBtn = document.createElement("button");
+    addAfterBtn.appendChild(document.createTextNode("Add After"));
+    addAfterBtn.setAttribute("todo", "addAfter");
+    divNewCard.appendChild(addAfterBtn);
 
-// Generate Buttons on Card
+    const deleteCardBtn = document.createElement("button");
+    deleteCardBtn.appendChild(document.createTextNode("Delete"));
+    deleteCardBtn.setAttribute("todo", "delete");
+    divNewCard.appendChild(deleteCardBtn);
 
+    divNewCard.classList.add("clCards");
 
-const addBeforeBtn = document.createElement('button');
-addBeforeBtn.appendChild(document.createTextNode("Add Before"));
-divNewCard.classList.add("button");
-divNewCard.appendChild(addBeforeBtn);
+    return divNewCard;
+  },
 
-const addAfterBtn = document.createElement('button');
-addAfterBtn.appendChild(document.createTextNode("Add After"));
-divNewCard.classList.add("button");
-divNewCard.appendChild(addAfterBtn);
+  //Card Logic - Connects card to event listener
 
-const deleteCardBtn = document.createElement('button');
-deleteCardBtn.appendChild(document.createTextNode("Delete"));
-divNewCard.classList.add("button");
-divNewCard.appendChild(deleteCardBtn);
+  addCardBefore: (el) => {
+    const card = el.parentElement;
+    const group = card.parentElement;
+    const div = functions.buildNewCard();
+    group.insertBefore(div, card);
+  },
 
-divNewCard.classList.add("clCards");
+  addCardAfter: (el) => {
+    const card = el.parentElement;
+    const group = card.parentElement;
+    const div = functions.buildNewCard();
+    group.insertBefore(div, card.nextSibling);
 
-return divNewCard;
+  },
 
-},
+  deleteCard: (el) => {
+    const card = el.parentElement;
+    const group = card.parentElement;
+    group.removeChild (card); 
 
-//Card Logic - Makes the card work
+  },
+};
 
-addCardBefore: (node, text) => {
-    const div= functions.buildNewCard(text);
-    node.parentElement.insertBefore (div,node);
-
-},
-
-addCardAfter: (node, text) => {
-    const div = functions.buildNewCard(text);
-    node.parentElement.appendChild(div,node);
-
-},
-
-deleteCard: (node, text) => {
-    const div = functions.buildNewCard(text);
-    node.parentNode.removeChild(div,node);
-          }
-
-}
-
-// {
-//     if (node.parentNode) {
-//         node.parentNode.removeChild(node);
-//           }
-
-
-export default functions; 
+export default functions;

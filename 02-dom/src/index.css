@@ -27,18 +27,18 @@ li {
 button {
   display: block;
   margin: 0 auto;
-  width: 30%;
+  width: 50%;
 }
 
-#mstrCrd {
+/* #mstrCrd {
   border: solid 5px grey;
 
-}
+} */
 
 .clCards {
 
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   border: solid 2px lightgrey;
   margin-bottom: 20px;
   margin-right: 10px;
@@ -56,3 +56,12 @@ button {
 
 }
 
+.clGroupArea {
+  border: solid;
+  display: flex;
+
+}
+
+.clCardArea {
+  min-width: 40%;
+}
